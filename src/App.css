@@ -1,0 +1,175 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(31, 41, 55, 0.9);
+  /* gray-900 */
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #60A5FA;
+  /* blue-400 */
+}
+
+/* Add top padding to avoid overlap with navbar */
+.offset-top {
+  padding-top: 80px;
+}
+
+/* Main Section */
+.main-section {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    padding: 6rem 1rem;
+  }
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 3.75rem;
+  }
+}
+
+.main-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.main-description {
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+/* Carousel Section */
+.carousel-section {
+  max-width: 1024px;
+  margin: 0 auto 3rem;
+  padding: 2rem 1rem;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem 1rem;
+}
+
+.video-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: black;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+}
+
+.contact-section h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section a {
+  color: #60A5FA;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
