@@ -26,7 +26,7 @@ const App = () => {
         <p className="main-description">
           Scan. Upload. View. Powered by unique QR on every page. Revolutionizing student learning.
         </p>
-        <a href="./assets/pixelpage.apk" download="pixelpage.apk" className="download-button">
+       <a href="/pixelpage.apk" download className="download-button">
           Download App
         </a>
       </section>
